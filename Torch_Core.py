@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jan 20 2026
-
-@author: antal
-"""
 
 import torch 
 import torch.nn as nn
@@ -57,7 +51,7 @@ loss_fn = nn.MSELoss()
 
 for epoch in range(epochs):
     
-    #forward pass
+    # forward pass
     y_hat = model(X)
     
     loss = loss_fn(y_hat, y_true)
